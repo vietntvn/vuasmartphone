@@ -12964,4 +12964,22 @@ ul.menu-bottom li.level0 span.click-mobile.active {
     .fixed_icons {
         display: none;
     }
+
+    .ctn-frame{
+        display: flex;
+        flex-direction: column;
+    }
+    .ctn-frame .frame_b_l{
+        order: 2;
+    }
+    .ctn-frame .frame_b_r{
+        order: 1;
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+
+    .button2_wrap #buy-now-2, .button2_wrap .btn-tragop {
+        width: 100%;
+    }
 }
