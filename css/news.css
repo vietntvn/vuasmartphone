@@ -3088,3 +3088,42 @@ ul.menu-bottom li.level0 span.click-mobile.active {
 }
 
 /*# sourceMappingURL=newsletter.css.map */
+#cfacebook {
+    position: fixed;
+    bottom: 13%;
+    left: 0;
+    z-index: 99999;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    overflow: hidden;
+}
+
+.suntory-alo-phone {
+    background-color: transparent;
+    cursor: pointer;
+    height: 120px;
+    position: fixed;
+    transition: visibility 0.5s ease 0s;
+    width: 120px;
+    z-index: 200000 !important;
+    display: none;
+    left: 0px;
+    bottom: -25px;
+}
+
+@media screen and (max-width: 736px) {
+    #cfacebook {
+        left: auto;
+        bottom: 15%;
+        right: 10px;
+    }
+
+    .suntory-alo-phone {
+        display: block;
+    }
+
+    .fixed_icons {
+        display: none;
+    }
+}
