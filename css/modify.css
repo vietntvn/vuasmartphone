@@ -1,0 +1,190 @@
+.search-contain {
+	width: calc( 100% - 15px);
+	max-width: 100%;
+	box-sizing: border-box;
+	float: left;
+	border: 1px solid #efefef;
+	border-radius: 50px;
+	padding: 0px 15px;
+	background: #fff
+}
+
+.search-contain .search-content {
+	border-radius: 4px;
+	border: none
+}
+
+.search-contain input[type="text"] {
+	border: none;
+	background: #FFF;
+	width: 100%;
+	height: 35px;
+	box-sizing: border-box;
+	font-size: 13px
+}
+
+#search_form {
+	position: relative
+}
+
+#search .button-search {
+	width: 42px;
+	height: 35px;
+	position: absolute;
+	background: unset;
+	border: none;
+	right: -15px;
+	outline: none;
+	top: 0px;
+	border-radius: 0 4px 4px 0;
+	cursor: pointer
+}
+
+#search .button-search svg {
+	width: 16px;
+	background: transparent;
+	color: var(--main-color);
+	padding: 10px 10px
+}
+
+.button-search i {
+	width: 26px;
+	height: 29px;
+	background-position: 0px 0px;
+	display: block;
+	margin-left: 11px;
+	margin-top: 4px
+}
+
+.autocomplete-suggestions {
+	position: absolute;
+	top: 4px;
+	right: -5px;
+	margin: 6px 0 0 6px;
+	_background: none;
+	_margin: 1px 0 0 0
+}
+
+.autocomplete-suggestions {
+	border: 1px solid #ececec;
+	background: #fff;
+	cursor: default;
+	overflow: auto;
+	margin: 0 0px 6px -1px;
+	width: 100%;
+	top: 45px;
+	left: 347px;
+    max-height: 300px;
+	z-index: 100000000000001 !important
+}
+
+@media only screen and (min-width: 1180px) {
+	.autocomplete-suggestions {
+		width: 360px !important
+	}
+}
+
+.autocomplete-suggestions div {
+	cursor: pointer;
+	width: 100%;
+	display: inline-block;
+	clear: both;
+	padding: 0;
+	margin: 0;
+	margin-bottom: -5px
+}
+
+.autocomplete-suggestions .autocomplete-group {
+	padding: 8px 3%;
+	width: 100%;
+	background: #f9f9f9;
+	box-sizing: border-box
+}
+
+.autocomplete-suggestions div a,
+.autocomplete-suggestions div a:link,
+.autocomplete-suggestions div a:visited {
+	display: inline-block;
+	margin: 0;
+	padding: 6px 3%;
+	width: 100%;
+	font-size: 13px;
+	color: #333;
+	background: #fff;
+	clear: both;
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box
+}
+
+.autocomplete-suggestions div a:hover {
+	background: #ececec
+}
+
+.autocomplete-suggestions div a img {
+	width: 64px;
+	float: left;
+	margin-right: 20px
+}
+
+.autocomplete-suggestions div a label {
+	font-weight: normal;
+	cursor: pointer;
+	margin: 0;
+	float: left
+}
+
+.autocomplete-suggestions div a span {
+	display: block;
+	clear: both;
+	cursor: pointer;
+	margin: 0;
+	padding: 0
+}
+
+.autocomplete-suggestions div a span.price {
+	color: #fd0000;
+	padding-top: 10px
+}
+
+.autocomplete-suggestions div.last {
+	border: none
+}
+
+.autocomplete-suggestions strong {
+	font-weight: 500;
+	color: #0083bf
+}
+
+.autocomplete-suggestions::-webkit-scrollbar-track {
+	border-radius: 15px;
+	background-color: #EBEBEB
+}
+
+.autocomplete-suggestions::-webkit-scrollbar {
+	width: 5px;
+	background-color: #EBEBEB;
+	border-radius: 15px
+}
+
+.autocomplete-suggestions::-webkit-scrollbar-thumb {
+	border-radius: 15px;
+	background: #2080CA;
+	border: 1px solid #EBEBEB
+}
+
+@media only screen and (max-width: 450px) {
+	.search-contain {
+		width: 100%
+	}
+	.search-contain input[type="text"] {
+		border-radius: 4px
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.autocomplete-suggestions {
+        top: 44px;
+        left: 70px;
+        width: 300px;
+	}
+}
